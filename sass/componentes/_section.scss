@@ -1,0 +1,14 @@
+section{
+    width: 95%;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .section__div{
+        margin: 30px;
+        .section__div--img{
+            border-radius: 15px;
+        }
+    }
+}

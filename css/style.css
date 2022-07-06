@@ -3,11 +3,22 @@
   padding: 0;
   box-sizing: border-box; }
 
+main .img__nosotros {
+  margin: 30px;
+  display: flex;
+  justify-content: center; }
+
 main .nosotros__section {
-  margin: 40px; }
+  margin: 0px; }
   main .nosotros__section .nosotros__section--p {
-    margin: 100px;
+    margin: 90px;
     text-align: center; }
+  @media screen and (max-width: 800px) {
+    main .nosotros__section {
+      margin: 100px; } }
+  @media screen and (max-width: 600px) {
+    main .nosotros__section {
+      margin: 0; } }
 
 main .contenedor {
   display: grid;
@@ -16,12 +27,11 @@ main .contenedor {
     main .contenedor {
       display: grid;
       grid-template-columns: 1fr 1fr; } }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px) {
     main .contenedor {
       display: grid;
       grid-template-columns: 1fr; } }
   main .contenedor .contenedor__div {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,24 +46,36 @@ main .contenedor {
         height: 100%; }
       main .contenedor .contenedor__div .figura .adentro {
         text-align: center; }
+    @media screen and (max-width: 380px) {
+      main .contenedor .contenedor__div {
+        width: 250px;
+        margin: 20px; } }
+
+main h3 {
+  padding: 40px;
+  text-align: center; }
 
 main .espacio {
   margin: 71px; }
 
-section {
-  width: 95%;
-  max-width: 120rem;
-  margin-left: auto;
-  margin-right: auto;
+section .contenedor {
+  display: flex;
+  justify-content: center;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 30px; }
+  section .contenedor .section__div {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%; }
   @media screen and (max-width: 1100px) {
-    section {
+    section .contenedor {
       display: grid;
       grid-template-columns: 1fr; } }
-  section .section__div {
+  section .contenedor .section__div {
     margin: 30px; }
-    section .section__div .section__div--img {
+    section .contenedor .section__div .section__div--img {
       border-radius: 15px; }
 
 footer {

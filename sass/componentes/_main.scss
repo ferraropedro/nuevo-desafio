@@ -1,9 +1,20 @@
 main{
+    .img__nosotros{
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+    }
     .nosotros__section{
-        margin: 40px;
+        margin: 0px;
         .nosotros__section--p{
-            margin: 100px;
+            margin: 90px;
             text-align: center;
+        }
+        @media screen and (max-width: 800px){
+            margin: 100px;
+        }
+        @media screen and (max-width: 600px){
+            margin: 0;
         }
     }
     
@@ -14,12 +25,11 @@ main{
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 800px) {
             display: grid;
             grid-template-columns: 1fr;
         }
-        .contenedor__div{
-            width: 100%;
+        .contenedor__div{    
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,9 +47,21 @@ main{
                     text-align: center;
                 }
             }
+            @media screen and (max-width: 380px) {
+                width: 250px;
+                margin: 20px;
+               
+            }
         }
     }
+
+    h3{
+        padding: 40px;
+        text-align: center;
+    }
+
     .espacio{
         margin: 71px;
     }
+
 }
